@@ -1,6 +1,6 @@
 /**********************************************************
-* Developer: Dadan Suganda (danska83@gmail.com)           *
-* Website: https://danska.tk/downgit                      *
+* Developer:            *
+* Website:                       *
 * License: MIT License                                    *
 ***********************************************************/
 
@@ -33,7 +33,7 @@ homeModule.config([
 
                     var templateUrl = "https?://github.com/.+/.+";
                     var downloadUrlInfix = "#/home?url=";
-                    var downloadUrlPrefix = "https://tkdot.tk/downgit"+downloadUrlInfix;
+                    var downloadUrlPrefix = "https://MkBEt.github.io/web/downgit"+downloadUrlInfix;
 
                     if ($routeParams.url) {
                         $scope.url = $routeParams.url;
