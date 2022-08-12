@@ -1,6 +1,6 @@
 /**********************************************************
-* Developer: Dadan Suganda (bsdanska@gmail.com)           *
-* Website: https://danska.tk/downgit/                     *
+* Developer:            *
+* Website:                      *
 * License: MIT License                                    *
 ***********************************************************/
 
