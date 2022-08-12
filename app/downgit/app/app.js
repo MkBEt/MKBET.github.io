@@ -1,6 +1,6 @@
 /***********************************************************
-* Developer: Dadan Suganda (bsdanska@gmail.com)       *
-* Website: https://danska.tk                               *
+* Developer:        *
+* Website:                                *
 * License: MIT License                                     *
 ***********************************************************/
 
