@@ -5,7 +5,6 @@ function doencrypt(theform) {
       enctext = encrypt(theform.code.value);
       codetocopy = "<script Language='Javascript'>\n";
       codetocopy += "<!-- Encrypted by MkB Et -->\n";
-      // codetocopy += "<!-- Tools : https://MkBEt.github.io/web/app/encrypt-html/ -->\n";
       codetocopy += "document.write(unescape('" + enctext + "'));\n";
       codetocopy += "//-->\n";
       codetocopy += "</script\>";
