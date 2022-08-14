@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="MkBEt: QR-Code Generator" property="og:title" />
+    <meta content="Generate your own QR Code on MkBEt.github.io" property="og:description" />
+    <meta content=https://MkBEt.github.io/web" property="og:url" />
+    <meta content="https://MkBEt.github.io/web/assets/favicons/android-chrome-512x512.png" property="og:image" />
+    <meta content="#2293fa" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="/css/qrcode.css" />
+    <link rel="stylesheet" href="/css/util/utility.css" />
+  </head>
+  <body>
+    <div class="loaded-content">
+      <div class="wrapper">
+        <header>
+          <h1>QR Code Generator</h1>
+          <p>Paste a url or enter text to create a QR code</p>
+        </header>
+        <div class="form">
+          <input type="text" placeholder="Enter text or URL" />
+          <button class="custom">Generate QR Code</button>
+        </div>
+        <div class="qr-code">
+          <img src="/assets/img/qr_code_default.png" alt="QR Code" />
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/qrcode.js"></script>
+    <script src="/js/util/utility.js"></script>
+  </body>
+</html>
