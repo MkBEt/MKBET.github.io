@@ -58,13 +58,13 @@ const userCard = (user) => {
             <ul>
               <li><i class="fas fa-users"></i>${
                 user.followers
-              } <strong>Followers</strong></li>
+              } <strong> Followers</strong></li>
               <li><i class="fas fa-user-friends"></i>${
                 user.following
-              } <strong>Followings</strong></li>
+              } <strong> Followings</strong></li>
               <li><i class="fas fa-file-code"></i>${
                 user.public_repos
-              } <strong>Repos</strong></li>
+              } <strong> Repos</strong></li>
             </ul>
             <div id="repos"></div>
           </div>
@@ -78,7 +78,7 @@ const userCard = (user) => {
 const reposToCard = (repos) => {
   const userRepos = document.getElementById('repos');
 
-  repos.slice(0, 6).forEach((repo) => {
+  repos.slice(0, 10).forEach((repo) => {
     const userRepo = document.createElement('a');
     userRepo.classList.add('repo');
     userRepo.href = repo.html_url;
