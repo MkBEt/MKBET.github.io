@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="Chill31 Settings" property="og:title" />
+  <meta content="Customize the website chill31.github.io as much as you want" property="og:description" />
+  <meta content=https://chill31.github.io" property="og:url" />
+  <meta content="https://chill31.github.io/assets/favicons/android-chrome-512x512.png" property="og:image" />
+  <meta content="#2293fa" data-react-helmet="true" name="theme-color" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings31</title>
+
+  <link rel="stylesheet" href="/css/util/utility.css" />
+  <link rel="stylesheet" href="/css/Settings.css" />
+
+  <script src="/static/color/script.js"></script>
+  <link rel="stylesheet" href="/static/color/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <button class="previous-page custom">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="sidebar-content">
+      <button class="sidebar-button custom" data-redirect="display" data-nav="Display">
+        <i class="fa-solid fa-display"></i>
+      </button>
+
+      <button class="sidebar-button custom" data-redirect="appearance" data-nav="Appearance">
+        <i class="fa-solid fa-palette"></i>
+      </button>
+
+      <button class="sidebar-button custom" data-redirect="preferences" data-nav="Preferences">
+        <i class="fa-solid fa-toggle-on"></i>
+      </button>
+
+      <button class="sidebar-button danger custom" data-redirect="danger" data-nav="Danger Zone">
+        <i class="fa-solid fa-exclamation-triangle"></i>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <h1 class="main-header">Settings</h1>
+
+    <div class="nav nav-main">
+      <button class="navigateTo navNew" id="goDisplay" data-redirect="display" data-nav="Display">
+        <div class="navToContent">
+          <i class="fa-solid fa-display"></i>
+          <span class="navTitle">Display</span>
+        </div>
+      </button>
+
+      <button class="navigateTo navNew" id="goAppearance" data-redirect="appearance" data-nav="Appearance">
+        <div class="navToContent">
+          <i class="fa-solid fa-palette"></i>
+          <span class="navTitle">Appearance</span>
+        </div>
+      </button>
+
+      <button class="navigateTo navNew" id="goPreferences" data-redirect="preferences" data-nav="Preferences">
+        <div class="navToContent">
+          <i class="fa-solid fa-toggle-on"></i>
+          <span class="navTitle">Preferences</span>
+        </div>
+      </button>
+
+      <button class="navigateTo navNew" id="goDanger" data-redirect="danger" data-nav="Danger">
+        <div class="navToContent">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          Danger Zone
+        </div>
+      </button>
+    </div>
+
+    <div class="newPage" id="display">
+      <span class="currentLocation"><span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">Display</span>
+      </span>
+
+      <div class="nav nav-new">
+        <button class="navigateTo navSub" id="goMenuPlacement" data-redirect="menuPlacement" data-nav="Menu Placement">
+          <div class="navToContent">
+            <i class="fa-solid fa-bars"></i>
+            Menu Placement
+          </div>
+        </button>
+
+        <button class="navigateTo navSub" id="goFonts" data-redirect="fonts" data-nav="Fonts">
+          <div class="navToContent">
+            <i class="fa-solid fa-font"></i>
+            Fonts
+          </div>
+        </button>
+
+        <button class="navigateTo navSub" id="goProjectDisplay" data-redirect="projectDisplay"
+          data-nav="Projects Display">
+          <div class="navToContent">
+            <i class="fa-solid fa-archive"></i>
+            Projects Default Display
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="newPage" id="appearance">
+      <span class="currentLocation"><span class="go-previous goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="go-previous goSub">Appearance</span>
+      </span>
+
+      <div class="nav nav-new">
+        <button class="navigateTo navSub" id="goColors" data-redirect="colors" data-nav="Custom Colors">
+          <div class="navToContent">
+            <i class="fa-solid fa-brush"></i>
+            Custom Colors
+          </div>
+        </button>
+
+        <button class="navigateTo navSub" id="goThemes" data-redirect="themes" data-nav="Preset Themes">
+          <div class="navToContent">
+            <i class="fa-solid fa-palette"></i>
+            Preset Themes
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="newPage" id="preferences">
+      <span class="currentLocation"><span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="go-previous goSub">Preferences</span>
+      </span>
+
+      <div class="nav nav-new">
+        <button class="navigateTo navSub" id="goShortcuts" data-redirect="shortcuts" data-nav="Shortcuts">
+          <div class="navToContent">
+            <i class="fa-solid fa-list"></i>
+            Shortcuts
+          </div>
+        </button>
+
+        <button class="navigateTo navSub" id="goParticles" data-redirect="particles" data-nav="Particles">
+          <div class="navToContent">
+            <i class="fa-solid fa-splotch"></i>
+            Particles
+          </div>
+        </button>
+
+        <button class="navigateTo navSub" id="goParticles" data-redirect="notifications" data-nav="Notifications">
+          <div class="navToContent">
+            <i class="fa-solid fa-message"></i>
+            Notifications
+          </div>
+        </button>
+
+        <button class="navigateTo navSub" id="goExternalFetch" data-redirect="externalData" data-nav="External Data">
+          <div class="navToContent">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            External API's
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="newPage" id="danger">
+      <span class="currentLocation"><span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">Danger Zone</span>
+      </span>
+
+      <p class="danger-info">
+        Are you sure you want to delete every settings and data ever stored on
+        this website? This includes all the themes, custom colors, and all the
+        notes you made through the projects, basically Everything.
+      </p>
+
+      <button class="deleteAll">Yes, Delete All</button>
+    </div>
+
+    <div class="subPage" id="menuPlacement" data-main="display">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Menu Placement</span>
+      </span>
+
+      <div class="choose-div choose-menu-div">
+        <button class="choose menu-choose" id="choose-menu-left" data-chosen>Left</button>
+        <button class="choose menu-choose" id="choose-menu-right">Right</button>
+      </div>
+    </div>
+
+    <div class="subPage" id="fonts" data-main="display">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Fonts</span>
+      </span>
+
+      <div class="font-choose-flex">
+
+        <div class="choose-font-div choose-normal" data-type="Normal Font">
+          <span class="choose font-choose font-normal" id="quicksand" data-chosen>Quicksand</span>
+          <span class="choose font-choose font-normal" id="raleway">Raleway</span>
+          <span class="choose font-choose font-normal" id="poppins">Poppins</span>
+          <span class="choose font-choose font-normal" id="montserrat">Montserrat</span>
+          <span class="choose font-choose font-normal" id="system">System-UI</span>
+        </div>
+
+        <div class="choose-font-div choose-code" data-type="Code Font">
+          <span class="choose font-choose font-code" id="jetbrains" data-chosen>Jetbrains Mono</span>
+          <span class="choose font-choose font-code" id="fira">FiraCode</span>
+          <span class="choose font-choose font-code" id="robotoMono">Roboto Mono</span>
+          <span class="choose font-choose font-code" id="cascadiaCode">Cascadia Code</span>
+          <span class="choose font-choose font-code" id="browser">Monospace</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="subPage" id="projectDisplay" data-main="display">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Projects Default Display</span>
+      </span>
+
+      <div class="choose-div choose-display-div">
+
+        <div class="choose display-choose" id="slider" data-chosen>Slider</div>
+        <div class="choose display-choose" id="grid">Grid</div>
+
+      </div>
+    </div>
+
+    <div class="subPage" id="colors" data-main="appearance">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Custom Colors</span>
+      </span>
+
+      <div class="picker-grid">
+
+        <div class="grid-item">
+
+          <span class="picker-header">Accent Color</span>
+          <div class="picker-div p1">
+
+          </div>
+
+        </div>
+
+
+        <div class="grid-item">
+
+          <span class="picker-header">Dark Accent Color</span>
+          <div class="picker-div p2">
+
+          </div>
+
+        </div>
+
+
+        <div class="grid-item">
+
+          <span class="picker-header">Selection Color</span>
+          <div class="picker-div p3">
+
+          </div>
+
+        </div>
+
+
+        <div class="grid-item">
+
+          <span class="picker-header">Top Header Color</span>
+          <div class="picker-div p4">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="subPage" id="themes" data-main="appearance">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Preset Themes</span>
+      </span>
+
+      <div class="choose-theme-div">
+
+        <div class="theme-choose theme-default">
+          <span class="theme-name">Default</span>
+          <img class="theme-image" src="/assets/theme-images/theme-default.jpg">
+        </div>
+
+        <div class="theme-choose theme-mist">
+          <span class="theme-name">Mist</span>
+          <img class="theme-image" src="/assets/theme-images/theme-mist.jpg">
+        </div>
+
+        <div class="theme-choose theme-forest">
+          <span class="theme-name">Forest</span>
+          <img class="theme-image" src="/assets/theme-images/theme-forest.jpg">
+        </div>
+
+        <div class="theme-choose theme-dull">
+          <span class="theme-name">Dull Yellow</span>
+          <img class="theme-image" src="/assets/theme-images/theme-dull.jpg">
+        </div>
+
+        <div class="theme-choose theme-underworld">
+          <span class="theme-name">Underworld</span>
+          <img class="theme-image" src="/assets/theme-images/theme-underworld.jpg">
+        </div>
+
+        <div class="custom-theme theme-custom">
+          <span class="theme-name">Make your Own</span>
+          <svg class="theme-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="subPage" id="shortcuts" data-main="preferences">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Shortcuts</span>
+      </span>
+
+      <label class="switch">
+        <input type="checkbox" class="toggle shortcut-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="subPage" id="particles" data-main="preferences">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Particles</span>
+      </span>
+
+      <label class="switch">
+        <input type="checkbox" class="toggle particles-toggle">
+        <span class="slider round"></span>
+      </label>
+
+      <label for="particle-amount-slider" class="particle-amount-label">Particles Amount: </label>
+      <input value="20" min="20" max="100" type="range" step="5" class="particle-range" id="particle-amount-slider">
+
+      <label class="particle-amount-show">20</label>
+
+    </div>
+
+    <div class="subPage" id="notifications" data-main="preferences">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">Notifications</span>
+      </span>
+
+      <label class="switch">
+        <input type="checkbox" class="toggle notif-toggle">
+        <span class="slider round"></span>
+      </label>
+
+    </div>
+
+    <div class="subPage" id="externalData" data-main="preferences">
+      <span class="currentLocation">
+        <span class="goMain">Settings</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="goSub">...</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="currentPage">External API's</span>
+      </span>
+
+      <label class="switch">
+        <input type="checkbox" class="toggle external-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </main>
+
+  <script src="/js/util/utility.js"></script>
+  <script src="/js/settings.js"></script>
+</body>
+
+</html>
