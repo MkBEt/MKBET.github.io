@@ -12,7 +12,7 @@ body {
   --bg-color: #fff;
   --text-color: #000;
   --top-btm-bg: #54c0eb;
-  --a-clr: #2293fa;
+  --a-clr: linear-gradient(90deg, #3f8aa9 80%, #389ec8 10%);
   --a-clr-dark: #121417;
   --big-icon-fill: #404756;
   --selection-color: #2B84A9;
