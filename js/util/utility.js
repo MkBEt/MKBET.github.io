@@ -261,25 +261,7 @@ toggleHamMenu.innerHTML = `
 document.body.prepend(toggleHamMenu);
 document.body.prepend(createdHamMenu);
 
-createdHamMenu.innerHTML = `
 
-<div class="items-container" style="user-select: none">
-  <h1 class="menu-item item-home item1" data-redirect="/">Home</h1>
-
-  <h1 class="menu-item item-projects item2" data-redirect="/projects/">Projects</h1>
-
-  <h1 class="menu-item item-settings item3" data-redirect="/Settings.html">Settings</h1>
-</div>
-
-`;
-
-const menuSpans = document.querySelector(".span-c");
-let _menuActive_ = false;
-
-toggleHamMenu.addEventListener("click", () => {
-  createdHamMenu.classList.toggle("active");
-  menuSpans.classList.toggle("active");
-});
 
 const allMenuHeaders = document.querySelectorAll(".menu-item");
 allMenuHeaders.forEach(header => {
