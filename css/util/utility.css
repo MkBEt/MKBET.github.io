@@ -31,7 +31,7 @@ html {
 }
 
 *::selection {
-  background-color: var(--selection-color);
+  background-color: linear-gradient(90deg, #3f8aa9 80%, #389ec8 10%);
   color: var(--text-color);
 }
 
