@@ -240,36 +240,7 @@ function randomize(options) {
 
 }
 
-/** CREATING FULL SCREEN MENU */
-
-const createdHamMenu = document.createElement("div");
-createdHamMenu.classList.add("ham-menu");
-createdHamMenu.id = "menu";
-
-const toggleHamMenu = document.createElement("div");
-toggleHamMenu.classList.add("toggle-menu");
-toggleHamMenu.id = "toggle-menu";
-
-toggleHamMenu.innerHTML = `
-  <div class="span-c span-container">
-    <span class="span menu-span menu-span1"></span>
-    <span class="span menu-span menu-span2"></span>
-    <span class="span menu-span menu-span3"></span>
-  </div>
-`;
-
-document.body.prepend(toggleHamMenu);
-document.body.prepend(createdHamMenu);
-
-
-
-const allMenuHeaders = document.querySelectorAll(".menu-item");
-allMenuHeaders.forEach(header => {
-  header.addEventListener("click", () => {
-    redirect(header.getAttribute("data-redirect"));
-  });
-});
-
+/*
 if (!localStorage.getItem("normalFont")) {
   localStorage.setItem("normalFont", "Quicksand");
 }
