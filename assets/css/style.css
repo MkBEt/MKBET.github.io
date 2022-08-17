@@ -174,11 +174,9 @@ logo {
 	color: white;
 	position: fixed;
 	text-align: center;
-	font-size: 1rem;
 	left: 0;
 	right: 0;
-	top: -65;
-	
+	top: -30;	
 }
 /*--------------------------------------------------------------
 # Navigation Menu
