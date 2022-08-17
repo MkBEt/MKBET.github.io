@@ -1,11 +1,16 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
-
+            @font-face {
+            font-family: amazo;
+            src: url(font/Norton.ttf);
+        }
+        @font-face {
+            font-family: google;
+            src: url(font/Norton.ttf);
+        }
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
   
   /*========== Font and typography ==========*/
   --biggest-font-size: 2rem;
@@ -145,8 +150,8 @@ button{
 
 .trick__title{
   color: #01A8FF;
-  font-weight: var(--font-medium);
-  font-size: var(--normal-font-size);
+  font-size: 20;
+  font-family: google;
 }
 
 .trick__button{
@@ -247,7 +252,7 @@ button{
   }
 
   .category__container{
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
     justify-content: center;
   }
 
@@ -264,7 +269,7 @@ button{
   }
 
   .trick__container{
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
     justify-content: center;
     gap: 2rem;
   }
