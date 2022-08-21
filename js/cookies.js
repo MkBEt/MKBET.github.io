@@ -1,13 +1,1 @@
-const cookieBox = document.querySelector(".cookie"),
-    acceptBtn = cookieBox.querySelector("button");
-
-    acceptBtn.onclick = ()=>{
-      document.cookie = "CookieBy=Danska; max-age="+60*60*24*30;
-      if(document.cookie){
-        cookieBox.classList.add("hide");
-      }else{
-        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-      }
-    }
-    let checkCookie = document.cookie.indexOf("CookieBy=Danska");
-    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+function _0x1c36(){const _0x1f8589=['cookie','hide','onclick','44011JFLgBa','button','Cookie\x20can\x27t\x20be\x20set!\x20Please\x20unblock\x20this\x20site\x20from\x20the\x20cookie\x20setting\x20of\x20your\x20browser.','344024RMWFHA','querySelector','CookieBy=MkB;\x20max-age=','148227GcXGWd','328560lgLgoX','655417wpqXlc','120ogWBxf','classList','7345tSnshQ','CookieBy=MkB','add','525264kjkCbT'];_0x1c36=function(){return _0x1f8589;};return _0x1c36();}const _0xfef123=_0x103d;(function(_0x1313fc,_0x5cebd7){const _0x765a24=_0x103d,_0xeeef1a=_0x1313fc();while(!![]){try{const _0x4b1164=parseInt(_0x765a24(0x137))/0x1+parseInt(_0x765a24(0x12c))/0x2+-parseInt(_0x765a24(0x12b))/0x3+-parseInt(_0x765a24(0x133))/0x4+-parseInt(_0x765a24(0x130))/0x5*(-parseInt(_0x765a24(0x12e))/0x6)+parseInt(_0x765a24(0x12d))/0x7+-parseInt(_0x765a24(0x128))/0x8;if(_0x4b1164===_0x5cebd7)break;else _0xeeef1a['push'](_0xeeef1a['shift']());}catch(_0x369da3){_0xeeef1a['push'](_0xeeef1a['shift']());}}}(_0x1c36,0x1a436));const cookieBox=document[_0xfef123(0x129)]('.cookie'),acceptBtn=cookieBox[_0xfef123(0x129)](_0xfef123(0x138));acceptBtn[_0xfef123(0x136)]=()=>{const _0x47e0d3=_0xfef123;document[_0x47e0d3(0x134)]=_0x47e0d3(0x12a)+0x3c*0x3c*0x18*0x1e,document[_0x47e0d3(0x134)]?cookieBox[_0x47e0d3(0x12f)][_0x47e0d3(0x132)](_0x47e0d3(0x135)):alert(_0x47e0d3(0x127));};let checkCookie=document[_0xfef123(0x134)]['indexOf'](_0xfef123(0x131));function _0x103d(_0x27a032,_0x243b56){const _0x1c36f9=_0x1c36();return _0x103d=function(_0x103da7,_0x36ebc8){_0x103da7=_0x103da7-0x127;let _0x53a79f=_0x1c36f9[_0x103da7];return _0x53a79f;},_0x103d(_0x27a032,_0x243b56);}checkCookie!=-0x1?cookieBox[_0xfef123(0x12f)][_0xfef123(0x132)](_0xfef123(0x135)):cookieBox[_0xfef123(0x12f)]['remove'](_0xfef123(0x135));
