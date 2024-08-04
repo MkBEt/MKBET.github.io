@@ -15,7 +15,7 @@ document.getElementById('startBtn').addEventListener('click', async () => {
     const generatedKeysTitle = document.getElementById('generatedKeysTitle');
     const keyCount = parseInt(keyCountSelect.value);
 
-    keyCountLabel.innerText = `Количество ключей: ${keyCount}`;
+    keyCountLabel.innerText = `The number of keys is: ${keyCount}`;
 
     progressBar.style.width = '0%';
     progressText.innerText = '0%';
@@ -41,7 +41,7 @@ document.getElementById('startBtn').addEventListener('click', async () => {
         try {
             clientToken = await login(clientId);
         } catch (error) {
-            alert(`Не удалось войти: ${error.message}`);
+            alert(`Failed to enter: ${error.message}`);
             startBtn.disabled = false;
             return null;
         }
@@ -60,7 +60,7 @@ document.getElementById('startBtn').addEventListener('click', async () => {
             updateProgress(30 / keyCount);
             return key;
         } catch (error) {
-            alert(`Не удалось сгенерировать ключ: ${error.message}`);
+            alert(`Failed to generate key: ${error.message}`);
             return null;
         }
     };
@@ -71,7 +71,7 @@ document.getElementById('startBtn').addEventListener('click', async () => {
         keysList.innerHTML = keys.filter(key => key).map(key => `
             <div class="key-item">
                 <input type="text" value="${key}" readonly>
-                <button class="copyKeyBtn" data-key="${key}">Скопировать ключ</button>
+                <button class="copyKeyBtn" data-key="${key}">Copy key</button>
             </div>
         `).join('');
         copyAllBtn.classList.remove('hidden');
@@ -79,7 +79,7 @@ document.getElementById('startBtn').addEventListener('click', async () => {
         keysList.innerHTML = `
             <div class="key-item">
                 <input type="text" value="${keys[0]}" readonly>
-                <button class="copyKeyBtn" data-key="${keys[0]}">Скопировать ключ</button>
+                <button class="copyKeyBtn" data-key="${keys[0]}">Copy key</button>
             </div>
         `;
     }
@@ -121,11 +121,11 @@ document.getElementById('generateMoreBtn').addEventListener('click', () => {
     document.getElementById('generatedKeysTitle').classList.add('hidden');
     document.getElementById('copyAllBtn').classList.add('hidden');
     document.getElementById('keysList').innerHTML = '';
-    document.getElementById('keyCountLabel').innerText = 'Количество ключей:';
+    document.getElementById('keyCountLabel').innerText = 'Number of keys:';
 });
 
 document.getElementById('creatorChannelBtn').addEventListener('click', () => {
-    window.location.href = 'https://t.me/pdosi_project';
+    window.location.href = 'https://t.me/MkBDev';
 });
 
 function generateClientId() {
@@ -142,7 +142,7 @@ async function login(clientId) {
     });
     const data = await response.json();
     if (!response.ok) {
-        throw new Error(data.message || 'Не удалось войти');
+        throw new Error(data.message || 'Failed to login');
     }
     return data.clientToken;
 }
@@ -162,7 +162,7 @@ async function emulateProgress(clientToken) {
     });
     const data = await response.json();
     if (!response.ok) {
-        throw new Error(data.message || 'Не удалось зарегистрировать событие');
+        throw new Error(data.message || 'Failed to register event');
     }
     return data.hasCode;
 }
@@ -178,7 +178,7 @@ async function generateKey(clientToken) {
     });
     const data = await response.json();
     if (!response.ok) {
-        throw new Error(data.message || 'Не удалось сгенерировать ключ');
+        throw new Error(data.message || 'Failed to generate key');
     }
     return data.promoCode;
 }
