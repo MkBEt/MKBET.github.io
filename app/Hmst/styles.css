@@ -39,6 +39,8 @@ select {
     border-radius: 14px;
     background-color: #0F52BA;
     color: white;
+    font-size: 24px;
+    text-align: center;
 }
 
 .button {
