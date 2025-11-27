@@ -137,6 +137,7 @@ background-color: #3FA796;
 }
 
 .chapter h5 {
+	text-align: right;
     font-size: 22pt;
     margin: 0;
     padding-right: 5px;
@@ -223,7 +224,7 @@ main .item .ayat h2 {
     text-align: right;
     font-family:'mirza';
 font-size: 19pt;
-margin-left: 20;
+margin-left: 0;
 color: #3FA796;
 }
 
